@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
-
+import HeaderApp from './Header';
+import Post from './Post';
+import RSB from './RightSidebar';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderApp/>
+      <div style={{
+        display:"flex",
+        justifyContent:"center",
+        gap:"50px"  
+      }}>
+        <div style={{
+          flexGrow:"1",
+          marginLeft:"20px"
+        }}>
+          <Post title="first_post">
+            <h4>tiririr</h4>
+          </Post>
+          <Post title="2nd_post" />
+          <Post title="3rd_post" />
+          <Post title="4th_post" />
+          <Post title="5th_post" />
+          <Post title="2nd_post" />
+          <Post title="3rd_post" />
+          <Post title="4th_post" />
+          <Post title="5th_post" />
+          <Post title="2nd_post" />
+          <Post title="3rd_post" />
+          <Post title="4th_post" />
+          <Post title="5th_post" />
+          
+        </div>
+        <RSB/>
+      </div>
     </div>
   );
 }

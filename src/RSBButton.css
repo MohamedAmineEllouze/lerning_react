@@ -1,0 +1,12 @@
+.RSBButton{
+    background-color:#F1948A;
+    border: none;
+    border-radius:5px;
+    box-shadow:0px 3px 4px rgba(0, 0, 0,0.7);     
+}
+
+.RSBButton:hover{
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.7); 
+    background-color:#f76454;    
+    
+}
